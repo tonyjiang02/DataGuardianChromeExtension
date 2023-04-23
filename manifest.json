@@ -1,0 +1,28 @@
+{
+  "action": {
+    "default_popup": "./src/popup/public/index.html"
+  },
+  "permissions": [
+    "storage",
+    "history",
+    "tabs",
+    "identity"
+  ],
+  "description": "Data Guardian",
+  "manifest_version": 3,
+  "name": "Data Guardian",
+  "version": "0.1",
+  "web_accessible_resources": [],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline';"
+  },
+  "oauth2": {
+    "client_id": "175259980186-e9j3t3e7q73ovh7bg9s071o00qecho2o.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email"
+    ]
+  }
+}
